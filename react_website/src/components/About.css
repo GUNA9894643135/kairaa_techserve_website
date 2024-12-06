@@ -1,0 +1,296 @@
+/* AboutPage.css */
+
+/* Working Process Section */
+.breadcrumb-text {
+  text-align: center;
+  padding: 95px 0;
+  background-color: rgb(255, 255, 255);
+  background-image: url(../../public/assets/images/about.jpg);
+  margin-top: 50px;
+  animation: fadeIn 1s ease-out;
+}
+
+.breadcrumb-text h1 {
+  font-size: 36px;
+  color: #ffffff;
+
+  margin-bottom: 10px;
+  animation: slideInFromTop 0.8s ease-out;
+}
+
+.breadcrumb-text p {
+  font-size: 16px;
+  color: #f7f2f2;
+  margin: 0;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.breadcrumb-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.breadcrumb-text a:hover {
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+/* Animation for smooth fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animation for slide-in from the top */
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Working Process Section */
+.ag-working-process {
+  padding-top: 4rem;
+  padding-bottom: 50px;
+  background-color: #f7f7f7;
+}
+
+.ag-process-disc {
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease-out;
+}
+
+.ag-section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f2531;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.process-btn a {
+  color: #097af4;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.process-btn a:hover {
+  color: #0056b3;
+}
+
+/* Hover animation for images */
+.ag-process-features-image img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ag-process-features-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Process Animation Shape */
+.process-animi-shape {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  animation: moveShape 2s infinite ease-in-out;
+}
+
+/* Animating the background shape */
+@keyframes moveShape {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+/* Client Image Animation */
+.client-group img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: slideInFromLeft 1.5s ease-out;
+}
+
+/* Animating client image */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Why You Should Need Section */
+.trip-service-area {
+  padding-top: 4rem;
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+
+.hrdd-section-title h1 span {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.section-text p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Hover animation for trip service boxes */
+.trip-service-box {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.trip-service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effects for icons and content */
+.trip-service-icon {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.trip-service-icon:hover {
+  transform: scale(1.1);
+}
+
+.trip-service-content h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.trip-service-content p {
+  color: #555;
+}
+
+/* Collaborate Section */
+.collaborate-area {
+  padding-top: 4rem;
+  padding-bottom: 100px;
+  background-color: #f7f7f7;
+}
+
+.hrdd-section-title h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  animation: fadeIn 1s ease-out;
+}
+
+.collaborate-info {
+  font-size: 1rem;
+  color: #555;
+}
+
+.collaborate-info-list p {
+  font-size: 1rem;
+}
+
+/* Hover effect for collaborate info list */
+.collaborate-info-list i {
+  font-size: 18px;
+  color: #007bff;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.collaborate-info-list i:hover {
+  color: #0056b3;
+}
+
+.collaborate-img-wrap {
+  position: relative;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.collaborate-img-wrap img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.testimonial-cart {
+  position: absolute;
+  bottom: 20px;
+  left: 300px;
+  background-color: rgba(204, 202, 202, 0.6);
+  color: #221e1e;
+  padding: 8px;
+  border-radius: 10px;
+  animation: fadeIn 2s ease-out;
+}
+
+.testimonial-cart i {
+  font-size: 30px;
+  color: #fff;
+}
+
+/* Button Animations */
+.common-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.common-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-4px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .collaborate-img-wrap {
+    display: none;
+  }
+
+  .collaborate-info p {
+    font-size: 0.9rem;
+  }
+
+  .trip-service-box {
+    padding: 15px;
+  }
+
+  .trip-service-content h2 {
+    font-size: 1.1rem;
+  }
+}

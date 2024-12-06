@@ -1,0 +1,133 @@
+/* Blog Section Styling */
+.kts-blog {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .kts-title-tag {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .section-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  
+  .ag-blog-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+  }
+  
+  .ag-blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-thumb a img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .ag-blog-card:hover .blog-thumb a img {
+    transform: scale(1.05);
+  }
+  
+  .blog-disc {
+    padding: 20px;
+  }
+  
+  .blog-meta {
+    margin-bottom: 15px;
+  }
+  
+  .blog-meta .badge {
+    font-size: 14px;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 30px;
+  }
+  
+  .blog-meta .badge.bg-primary {
+    background-color: #007bff;
+  }
+  
+  .blog-meta .badge.bg-secondary {
+    background-color: #6c757d;
+  }
+  
+  .blog-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .blog-title a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .blog-title a:hover {
+    color: #007bff;
+  }
+  
+  .blog-btn a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .blog-btn a:hover {
+    text-decoration: underline;
+  }
+  
+  .blog-btn i {
+    margin-left: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .kts-blog {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  
+    h1 {
+      font-size: 30px;
+    }
+  
+    .ag-blog-card {
+      margin-bottom: 20px;
+    }
+  
+    .blog-title {
+      font-size: 16px;
+    }
+  
+    .blog-meta .badge {
+      font-size: 12px;
+    }
+  }
+  

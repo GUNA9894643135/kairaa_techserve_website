@@ -1,0 +1,56 @@
+/* LoadingSpinner.css */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 9999; /* Ensure the spinner is on top of other content */
+}
+
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;  /* Width of the spinner */
+  position: relative;
+}
+
+.spinner-item {
+  width: 15px;
+  height: 15px;
+  background-color: #3498db; /* Color of the dots */
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out;
+  margin: 0 5px;
+}
+
+/* Animation keyframes for bouncing effect */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.spinner-item:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.spinner-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.spinner-item:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.spinner-item:nth-child(4) {
+  animation-delay: 0.6s;
+}

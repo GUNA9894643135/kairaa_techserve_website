@@ -1,0 +1,236 @@
+/* Container and position adjustments for the time cart */
+.time-cart {
+  position: absolute;
+  top: 64%;
+  left: 42%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.income-cart {
+  position: absolute;
+  top: 10%;
+  left: 52%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.like-cart {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  background-color: #fff;
+  padding: 10px;
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Time Cart Image List - Align images horizontally */
+.time-cart-img-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.time-cart-img-list img {
+  width: 45px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Text content inside the time cart */
+.time-cart-content {
+  text-align: left;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.time-cart-content h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.time-cart-content p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Button styling */
+.time-cart-btn-wrap {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.time-cart-btn-wrap a {
+  padding: 8px 14px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.time-cart-btn-wrap a:hover {
+  background-color: #0056b3;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust Time Cart for mobile */
+  .time-cart {
+      top: 70%;
+      left: 10%;
+      right: 10%;
+      width: auto;
+      padding: 15px;
+      flex-direction: column;
+      max-width: none;
+      gap: 10px; /* Ensure some gap between elements */
+  }
+
+  /* Time Cart Image List */
+  .time-cart-img-list {
+      justify-content: center;
+      gap: 10px; /* Add some space between images */
+  }
+
+  /* Adjust Time Cart Content */
+  .time-cart-content {
+      text-align: center;
+      margin-left: 0;
+  }
+
+  .time-cart-content h2 {
+      font-size: 14px;
+  }
+
+  .time-cart-btn-wrap a {
+      font-size: 10px;
+      padding: 6px 12px;
+  }
+
+  /* Adjust Everything Info Section */
+  .everything-info {
+      padding: 20px 15px;
+  }
+
+  .everything-info li {
+      font-size: 16px;
+      padding: 10px 0;
+  }
+
+  .arrow-link {
+      font-size: 20px;
+  }
+
+  .common-btn {
+      font-size: 16px;
+      padding: 10px 25px;
+  }
+}
+
+/* Styling for Everything Info Section */
+.everything-info {
+  padding: 30px 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.everything-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.everything-info li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+  transition: all 0.3s ease;
+}
+
+.everything-info li:hover {
+  background-color: #f1f1f1;
+  transform: translateX(5px);
+  padding-left: 20px;
+}
+
+.everything-info li:last-child {
+  border-bottom: none;
+}
+
+.arrow-link {
+  color: #007bff;
+  font-size: 22px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.arrow-link:hover {
+  color: #0056b3;
+  transform: translateX(5px);
+}
+
+.bi-arrow-right {
+  margin-left: 10px;
+}
+
+/* Common Button Styling */
+.common-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.common-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #003f8c);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.common-btn i {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.common-btn:hover i {
+  transform: translateX(5px);
+}

@@ -1,0 +1,109 @@
+/* Main Styles for Testimonials Section */
+/* .ag-testimonial-style {
+  background: url('/public/assets/images/agency/backgrounds/testi-bg.png');
+  background-size: cover;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px; */
+
+/* Container Styles */
+.ag-testimonial-style {
+  position: relative;
+  overflow: hidden;
+  padding: 50px 20px;
+  background: linear-gradient(to bottom right, #f0f8ff, #e6f7ff);
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonial Card */
+.ag-testimonial-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transform: scale(0.95);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ag-testimonial-card:hover {
+  transform: scale(1);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Quote Icon */
+.testimonial-quote-icon {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 10px;
+  animation: bounceIn 1.5s ease infinite;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.8;
+  animation: fadeInUp 1.5s ease;
+}
+
+/* Author Details */
+.test-author h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.test-author span {
+  font-size: 0.9rem;
+  color: #555;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Background */
+.ag-testimonial-background img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  animation: float 6s ease-in-out infinite;
+  opacity: 0.3;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,136 @@
+/* General Styling */
+header {
+  width: 100%;
+  background: #f0f0f5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+  transition: background 0.3s ease;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.logo-img {
+  max-height: 50px;
+  margin-right: 12px;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0066cc;
+  background: rgba(0, 102, 204, 0.1);
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-link.active {
+  color: #0066cc;
+  font-weight: bold;
+}
+
+/* Dropdown styling */
+.nav-item.dropdown {
+  position: relative;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #f7fdff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1050;
+  padding: 0.5rem 0;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 0.5rem 1.5rem;
+  color: #333;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background: rgba(0, 102, 204, 0.1);
+  color: #070add;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-nav.show {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+    padding: 0;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #0066cc;
+  }
+  
+  .btn-outline-primary.d-none.d-lg-block {
+    display: none; /* Hide careers button on mobile */
+  }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 30px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.2rem;
+  }
+}

@@ -1,0 +1,403 @@
+/* General Container Styling */
+.careers-container {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  padding: 0 15px; /* Add padding to container for better edge spacing */
+}
+label.input-group-text {
+  height: 54px;
+}
+/* Popular Jobs Slider Section */
+.popular-job-slide {
+  display:flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.single-popular-job-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.33% - 20px); /* Default for larger screens */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single-popular-job-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Job Title Styling */
+.program-time {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.program-time span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #18191b;
+}
+
+/* Job Description */
+.popular-job-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.popular-job-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popular-job-content ul li {
+  font-size: 14px;
+  color: #070707;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.popular-job-content ul li i {
+  font-size: 16px;
+  color: #040c17;
+  margin-right: 8px;
+}
+
+/* Apply Button */
+.popular-job-apply {
+  text-align: center;
+}
+
+.popular-job-apply button {
+  background-color: #11924d;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.popular-job-apply button:hover {
+  background-color: #698fe8;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 991px) {
+  .single-popular-job-item {
+    width: calc(50% - 20px); /* 2 items per row on medium screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .single-popular-job-item {
+    width: 100%; /* 1 item per row on small screens */
+  }
+
+  .program-time span {
+    font-size: 18px;
+  }
+
+  .popular-job-content p {
+    font-size: 14px;
+  }
+
+  .popular-job-content ul li {
+    font-size: 12px;
+  }
+
+  .popular-job-apply button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Owl Carousel Adjustments */
+.owl-carousel .owl-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.owl-carousel .owl-nav .owl-prev:hover,
+.owl-carousel .owl-nav .owl-next:hover {
+  background-color: #0056b3;
+}
+
+/* Featured Section */
+.featured-area {
+  background-color: #fff;
+  position: relative;
+  padding: 100px 0;
+}
+
+.featured-box {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.featured-box input, .featured-box select {
+  border-radius: 5px;
+  padding: 14px;
+  border: 1px solid #ccc;
+  width: 100%; /* Ensure the form fields stretch to fill the space */
+  margin-bottom: 15px; /* Add bottom margin between form fields */
+}
+
+.featured-box button {
+  background-color: #517dda;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.featured-box button:hover {
+  background-color: #218838;
+}
+
+/* General Layout */
+.careers-container {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.featured-area {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.featured-box {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+/* Form Styling */
+.contact-input input,
+.contact-input select {
+  border-radius: 5px;
+  padding: 14px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-input .form-control {
+  margin-bottom: 15px;
+}
+
+/* Button Styling */
+.contact-input button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-input button:hover {
+  background-color: #218838;
+}
+
+/* Input Group for Resume Upload */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group-text {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+/* Column Adjustments */
+@media (max-width: 767px) {
+  .contact-input .col-md-6 {
+    margin-bottom: 15px;
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 991px) {
+  .featured-box {
+    padding: 20px;
+  }
+
+  .contact-input button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* Centering Submit Button */
+.text-center button {
+  margin-top: 20px;
+}
+
+/* WOW Animations */
+.wow {
+  visibility: hidden;
+}
+
+.wow.animated {
+  visibility: visible;
+}
+
+/* For smoother fade-in effects */
+.wow.zoomIn.animated {
+  animation-duration: 1500ms;
+  animation-delay: 200ms;
+}
+
+
+.ch-section-title h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center; /* Center the title */
+}
+
+.ch-section-title .title-mark-section {
+  color: #007bff; /* Highlight color */
+  font-weight: 900;
+}
+
+.ch-section-title p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+  text-align: center; /* Center the paragraph text */
+}
+
+/* Image Styling */
+.platform-img img {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Add a soft shadow around the image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.platform-img img:hover {
+  transform: scale(1.05); /* Zoom-in effect on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Platform Work Section (Stack Cards Vertically) */
+.platform-work-wrap {
+  margin-top: 50px;
+}
+
+.platform-work-box {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 30px; /* Add space between the cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.platform-work-box:hover {
+  transform: translateY(-10px); /* Slightly lift the box on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.platform-work-box .platform-icon {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.platform-work-box .platform-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.platform-work-box .platform-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1199px) {
+  .platform-work-box {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .platform-area {
+    padding: 60px 0; /* Less padding on medium screens */
+  }
+
+  .featured-box {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Form Input Fields on Mobile */
+  .featured-box input, .featured-box select {
+    padding: 12px; /* Slightly smaller padding */
+    margin-bottom: 12px; /* Adjust bottom margin */
+  }
+
+  .featured-box button {
+    width: 100%; /* Make button full width */
+    padding: 12px 0; /* Adjust button padding */
+  }
+
+  .platform-img img {
+    margin-bottom: 20px; /* Add space below the image for mobile view */
+  }
+
+  .ch-section-title h1 {
+    font-size: 28px; /* Smaller heading on mobile */
+  }
+
+  .platform-work-box {
+    padding: 20px;
+  }
+
+  .platform-work-box .platform-content h3 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .ch-section-title p {
+    font-size: 14px; /* Adjust text size on small screens */
+  }
+}

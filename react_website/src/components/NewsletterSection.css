@@ -1,0 +1,72 @@
+/* Newsletter Section Styling */
+.ag-newsletter-style {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #c9c4c4, #d4d9d9); /* Gradient blue background */
+    color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .ag-newsletter-wrap {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .ag-section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .ag-newsletter-wrap .lead {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 1.8;
+  }
+  
+  .ag-hero-btn {
+    margin-top: 30px;
+  }
+
+  .ag-hero-btn a {
+    font-size: 30px;
+    color: #ffffff;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+  
+  .ag-btn-fill {
+    background-color: #2622ff; /* Bright button color */
+    color: rgb(0, 0, 0);
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+  }
+  
+  .ag-btn-fill:hover {
+    background-color: #9f9f9f; /* Slightly darker shade */
+    transform: scale(1.05); /* Subtle grow effect */
+  }
+  
+  @media (max-width: 768px) {
+    .ag-section-title {
+      font-size: 28px;
+    }
+  
+    .ag-newsletter-wrap .lead {
+      font-size: 16px;
+    }
+  
+    .ag-btn-fill {
+      padding: 12px 30px;
+      font-size: 16px;
+    }
+  }
+  
